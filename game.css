@@ -520,7 +520,7 @@ img {
 
 .card.opening>.title, .card.ending>.title {
     position: unset;
-    align-self: end;
+    align-self: flex-start;
     max-width: 46.5vmax;
     font-size: 15vmin;
     padding-right: 8vmax;
