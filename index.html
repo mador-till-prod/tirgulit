@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="לומדה לתרגול חומר גנרי">
+        <meta name="application-name" content="תרגולית" />
+        <meta name="theme-color" content="#94BFE5" />
+        <title>תרגולית</title>
+        <link rel="stylesheet" href="game.css">
+        <script type="text/javascript" src="drag.js"></script>
+
+        <script type="text/javascript" src="util.js"></script>
+        <script type="text/javascript" src="orient.js"></script>
+        <script type="text/javascript" src="base.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+        <script type="text/javascript" src="cards.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <!-- Background -->
+            <div id="upperCircle"> </div>
+            <div id="bottomCircle"> </div>
+
+            <!-- #region Cards-->
+            <!-- #region Non-interactive -->
+            <div class="card not-found">
+                <div class="title floating"></div>
+                <div class="content-container container-with-subtitle"></div>
+            </div>
+            <div class="card about">
+                <div class="title floating">אודות</div>
+                <div class="content-container container-with-subtitle">
+                    <div class="about-container">
+                        <div><b>אפיון תוצר:</b> סמ"ר גל גנסין</div>
+                        <div><b>מתכנת:</b> סמ"ר פלג ברנדוין</div>
+                        <div><b>עיצוב UX/UI:</b> רב"ט מייה ליבנה</div>
+                        <div><b>הטמעת תוכן:</b> דרגה שם משפחה</div>
+                        <div><b>מומחה תוכן:</b> דרגה שם משפחה</div>
+
+                        <div><b>רמ"ד טי"ל:</b> רס"ן מיגל לויתן</div>
+                        <div><b>רת"ח פרוייקטים:</b> רס"ר שלומי אוגרן</div>
+                        <div><b>רת"ח מו"פ וחדשנות בלמידה:</b> סמ"ר גל גנסין</div>
+                        <div><b>תאריך עדכון אחרון:</b> 1.1.1999</div>
+                    </div>
+                    <div class="bhds">
+                        <img src="assets/images/till.svg">
+                        <img src="assets/images/bhd.svg">
+                    </div>
+                    <div. class="nav-btns">
+                        <div class="back-btn" style="visibility: hidden;">
+                            <img src="assets/images/next.svg" class="nav-btn">
+                        </div>
+                        <div class="next-btn">
+                            <img src="assets/images/next.svg" class="nav-btn">
+                        </div>
+                    </div.>
+                </div>
+            </div>
+            <div class="card opening">
+                <div class="prod">הופק ע"י מדור טי"ל<img src="assets/images/small-till.svg"></div>
+                <div class="title"></div>
+                <div id="openingBtnsContainer">
+                    <div class="opening-card-btn btn" id="startBtn">
+                        <p class="btn-text">התחילו</p>
+                    </div>
+                    <div class="opening-card-btn btn" id="aboutBtn">
+                        <p class="btn-text">אודות</p>
+                    </div>
+                </div>
+                <img src="assets/images/girl.svg" class="opening-img">
+            </div>
+
+            <div class="card ending">
+                <div class="title"></div>
+                <div class="subtitle"></div>
+                <div id="endingBtnsContainer">
+                    <div class="btn" id="restartBtn">
+                        <p>נסו שוב</p>
+                    </div>
+                </div>
+                <img src="assets/images/girl.svg" class="ending-img">
+            </div>
+            <div class="card subject-intro">
+                <div class="title"></div>
+                <p class="subtitle"></p>
+                <div class="half-under-line"></div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card content-only">
+                <div class="title floating"></div>
+                <div class="content-container">
+                    <p class="content-section"> </p>
+                </div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card content-with-subtitle">
+                <div class="title floating"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle decorated"></p>
+                    <p class="content-section scrollable"> </p>
+                </div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card content-with-one-image">
+                <div class="title floating"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle decorated"></p>
+                    <div class="content">
+                        <p class="content-section"></p>
+                        <img src="assets/images/smartclass.jpg" class="content-img" />
+                        <p class="content-section"></p>
+                    </div>
+                </div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card content-with-two-images">
+                <div class="title floating"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle decorated"></p>
+                    <div class="content">
+                        <p class="content-section"></p>
+                        <img src="assets/images/smartclass.jpg" class="content-img" />
+                        <img src="assets/images/smartclass.jpg" class="content-img" />
+                        <p class="content-section"></p>
+                    </div>
+                </div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card table">
+                <div class="title floating"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+                    <div class="table">
+                    </div>
+                </div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card list">
+                <div class="title floating"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+                    <div class="ordered-list scrollable"></div>
+                </div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card form">
+                <div class="title floating"></div>
+                <div class="form-container"></div>
+                <div class="nav-btns">
+                    <div class="back-btn">
+                        <img src="assets/images/back.svg" class="nav-btn">
+                    </div>
+                    <div class="next-btn">
+                        <img src="assets/images/next.svg" class="nav-btn">
+                    </div>
+                </div>
+            </div>
+
+            <!-- #endregion -->
+            <!-- #region Interactive -->
+            <div class="card american-queations">
+                <div class="title floating">אמריקאי</div>
+                <div class="tracker"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+                    <div class="answers"></div>
+                    <div class="check-btn btn">בדקו</div>
+                    <div class="hint-container">
+                        <img src="assets/images/down.svg" class="hide-hint-btn">
+                        <div class="hint"></div>
+                    </div>
+                    <div class="hint-btn disable">
+                        <div class="hint-circle-part btn">?</div>
+                        <div class="hint-txt-part">רמז</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card multichoice-questions">
+                <div class="title floating">רב ברירה</div>
+                <div class="tracker"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle small-subtitle"></p>
+                    <p class="subtitle"></p>
+                    <div class="answers"></div>
+                    <div class="check-btn btn">בדקו</div>
+                    <div class="hint-container hint-container-multichoice">
+                        <img src="assets/images/down.svg" class="hide-hint-btn">
+                        <div class="hint"></div>
+                    </div>
+                    <div class="hint-btn disable">
+                        <div class="hint-circle-part btn">?</div>
+                        <div class="hint-txt-part">רמז</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- true/false question screen -->
+            <div class="card tf-questions">
+                <div class="title floating">נכון / לא נכון</div>
+                <div class="tracker"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+                    <div class="questions"></div>
+                    <div class="check-btn btn">בדקו</div>
+                    <div class="hint-container hint-container-multichoice">
+                        <img src="assets/images/down.svg" class="hide-hint-btn">
+                        <div class="hint"></div>
+                    </div>
+                    <div class="hint-btn disable">
+                        <div class="hint-circle-part btn">?</div>
+                        <div class="hint-txt-part">רמז</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card fillin-the-blanks">
+                <div class="part right">
+                    <div class="title floating">השלמת משפטים</div>
+                    <div class="content-container container-with-subtitle">
+                        <p class="subtitle"></p>
+                        <div class="content"></div>
+                        <div class="hint-container">
+                            <img src="assets/images/down.svg" class="hide-hint-btn">
+                            <div class="hint"></div>
+                        </div>
+                        <div class="hint-btn disable">
+                            <div class="hint-circle-part btn">?</div>
+                            <div class="hint-txt-part">רמז</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="part left">
+                    <div class="tracker"></div>
+                    <div class="droppable-container target reset"> </div>
+                </div>
+                <div class="check-btn btn">בדקו</div>
+            </div>
+
+            <!-- order screen -->
+            <div class="card arrange-by-order">
+                <div class="title floating">גרירה לפי הסדר</div>
+                <div class="tracker"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+                    <div class="ordering-list"></div>
+                </div>
+                <div class="check-btn btn">בדקו</div>
+                <div class="hint-container hint-container-multichoice">
+                    <img src="assets/images/down.svg" class="hide-hint-btn">
+                    <div class="hint"></div>
+                </div>
+                <div class="hint-btn disable">
+                    <div class="hint-circle-part btn">?</div>
+                    <div class="hint-txt-part">רמז</div>
+                </div>
+            </div>
+
+            <!-- matchMaker screen -->
+            <div class="card match-maker">
+                <div class="title floating">גרירה לפי הסדר</div>
+                <div class="tracker"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+                    <div class="content">
+                        <div class="match-area right"></div>
+                        <div class="match-area left"></div>
+                        <div class="band loose disable"></div>
+                    </div>
+
+                    <div class="check-btn btn">בדקו</div>
+                    <div class="hint-container hint-container-multichoice">
+                        <img src="assets/images/down.svg" class="hide-hint-btn">
+                        <div class="hint"></div>
+                    </div>
+                    <div class="hint-btn disable">
+                        <div class="hint-circle-part btn">?</div>
+                        <div class="hint-txt-part">רמז</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- recognize picture screen -->
+            <div class="card recognize-pictures">
+                <div class="title floating">זהה את התמונה</div>
+                <div class="tracker"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+                    <div class="recognize-picture-container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="check-btn btn">בדקו</div>
+                    <div class="hint-container hint-container-multichoice">
+                        <img src="assets/images/down.svg" class="hide-hint-btn">
+                        <div class="hint"></div>
+                    </div>
+                    <div class="hint-btn disable">
+                        <div class="hint-circle-part btn">?</div>
+                        <div class="hint-txt-part">רמז</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- recognition numbers screen -->
+            <div class="card microwave">
+                <div class="title floating">זיהוי</div>
+                <div class="tracker"></div>
+                <div class="content-container container-with-subtitle">
+                    <p class="subtitle"></p>
+
+                    <div class="body">
+                        <div class="recognition-navigation-btn back">
+                            <img src="assets/images/back.svg" alt="go back" class="back-btn">
+                        </div>
+                        <div class="microwave-options">
+                            <div class="microwave-option btn">
+                                <div>1</div>
+                            </div>
+                            <div class="microwave-option btn">
+                                <div>2</div>
+                            </div>
+                            <div class="microwave-option btn">
+                                <div>3</div>
+                            </div>
+                            <div class="microwave-option btn">
+                                <div>4</div>
+                            </div>
+                            <div class="microwave-option btn">
+                                <div>5</div>
+                            </div>
+                            <div class="microwave-option btn">
+                                <div>6</div>
+                            </div>
+                        </div>
+                        <img src="assets/images/smartclass.jpg" class="microwave-picture">
+                        <div class="recognition-navigation-btn next">
+                            <img src="assets/images/next.svg" alt="next" class="next-btn">
+                        </div>
+                    </div>
+
+                    <div class="check-btn btn">בדקו</div>
+                    <div class="hint-container hint-container-multichoice">
+                        <img src="assets/images/down.svg" class="hide-hint-btn">
+                        <div class="hint">רמז מאוד מרומז, הוא מסביר על השאלה ומחדד מה יכולה להיות התשובה המתאימה ביותר
+                            לשאלה
+                            שכזאת. בנוסף הוא עוזר לחניך להבין את התשובה בלי לותה מאוד, אוקיי האם זה מספיק כתיבה?
+                        </div>
+                    </div>
+                    <div class="hint-btn disable">
+                        <div class="hint-circle-part btn">?</div>
+                        <div class="hint-txt-part">רמז</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card explanation disable">
+                <div class="content-container">
+                    <div class="text">
+                        <div></div>
+                    </div>
+                    <div class="btn forward">המשיכו</div>
+                </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #endregion -->
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+    </body>
+</html>
