@@ -503,7 +503,6 @@ img {
 /* #region Opening card */
 
 .card.opening .prod {
-    /* font-weight: bold; */
     font-family: SecularOne-Regular;
     font-size: 2vmax;
     position: absolute;
@@ -511,6 +510,7 @@ img {
     align-items: center;
     top: -1.5em;
     left: 1em;
+    white-space: pre;
 }
 
 .card.opening .prod img {
