@@ -388,18 +388,6 @@ img {
     height: 100%;
 }
 
-.back-btn:hover, .next-btn:hover {
-    transform: scale(1.05);
-}
-
-.back-btn:hover {
-    content: url("assets/images/backHover.svg");
-}
-
-.next-btn:hover {
-    content: url("assets/images/nextHover.svg");
-}
-
 .check-btn {
     cursor: not-allowed;
     font-size: 2.5vmax;
@@ -485,15 +473,24 @@ img {
     color: var(--correct-green-color);
 }
 
-@media only screen and (max-width: 850px) {
+@media (hover: hover) {
+    .about .next-btn:hover {
+        content: url("assets/images/home.svg");
+    }
+    .card.microwave .back-btn:hover, .card.microwave .next-btn:hover {
+        content: unset;
+    }
+    .card.microwave:not(.disable) .microwave-options .btn:hover {
+        transform: scale(1.05);
+    }
+    .back-btn:hover, .next-btn:hover {
+        transform: scale(1.05);
+    }
     .back-btn:hover {
-        content: normal;
+        content: url("assets/images/backHover.svg");
     }
     .next-btn:hover {
-        content: normal;
-    }
-    .about .next-btn:hover {
-        content: normal;
+        content: url("assets/images/nextHover.svg");
     }
 }
 
@@ -615,10 +612,6 @@ img {
 
 .about .about-container>:last-child {
     flex: 2;
-}
-
-.about .next-btn:hover {
-    content: url("assets/images/home.svg");
 }
 
 .about .bhds>img {
@@ -1463,10 +1456,6 @@ img {
     transform-origin: left center;
 }
 
-.card.microwave .back-btn:hover, .card.microwave .next-btn:hover {
-    content: unset;
-}
-
 .microwave .body {
     position: relative;
     display: flex;
@@ -1491,10 +1480,6 @@ img {
     height: 2.5em;
     font-weight: 600;
     border-radius: 1vmax;
-}
-
-.card.microwave:not(.disable) .microwave-options .btn:hover {
-    transform: scale(1.05);
 }
 
 .microwave-options .btn.disabled {
